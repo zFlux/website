@@ -10,6 +10,7 @@
   
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
   <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"></link>
+  <link rel="stylesheet" href="css/bootstrap-table.css"></link>
   <link href="css/style.css" rel="stylesheet"></link>
   <script src="js/svgclock.js"></script>
 
@@ -87,16 +88,16 @@
       <li>Manhattan SCI 2010</li>
     </ul>
   </div>
-  <div class="col-lg-6 greyfont">
+  <div class="col-lg-6 greyfont" >
     <span class="hidden-xs">
     <h2>Runner</h2>
-      <table class="table table-striped">
+      <table data-toggle="table" data-height="190" data-striped="true">
 	<thead>
-	  <tr class="header">
-	    <th id="col1">Date</th>
-	    <th id="col2">Race</th>
-	    <th id="col3">Km</th>
-	    <th id="col4">Time</th>
+	  <tr>
+	    <th>Date</th>
+	    <th>Race</th>
+	    <th>Km</th>
+	    <th>Time</th>
 	  </tr>
 	</thead>
 	<tbody>
@@ -233,10 +234,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
 <script src="../../assets/js/docs.min.js"></script>
+<script src="js/bootstrap-table.js"></script>
 <span class="hidden-xs">
 <div class="footer">
     <div id="bottomemail" class="text-muted">Email questions or comments to: <a id="email" href="mailto:findme@danielchristo.com" target="_top">findme@danielchristo.com</a></div>
-    <div id="copyright">© 2014 Daniel Christo. All Rights Reserved.</div>
+    <div id="copyright">© 2015 Daniel Christo. All Rights Reserved.</div>
 </div>
 </span>
 

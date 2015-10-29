@@ -30,24 +30,6 @@ background-size: cover;}
     color: #F2F2F2;
 }
 
-#col1 {
-   float: left;
-   width: 24.5%;
-   text-align: left;
-}
-
-#col2 {
-   float: left;
-   width: 24.5%;
-   text-align: left;
-}
-
-#col3 {
-   float: left;
-   width: 25.3%;
-   text-align: left;
-}
-
 #bottomemail {
    color: black;
    text-align: left;
@@ -86,38 +68,6 @@ body {
 
 /* Running table styles
 -------------------------------------------------- */
-table {
-   width: 100%;
-}
-
-thead, tbody, tr, td, th { display: block; }
-
-tr:after {
-   content: ' ';
-   display: block;
-   visibility: hidden;
-   clear: both;
-}
-
-thead th {
-   height: 30px;
-
-    /*text-align: left;*/
-}
-
-tbody {
-   height: 213px;
-   overflow-y: auto;
-}
- 
-}
-thead th {
-    float: left;
-    text-align: left;
-} 
-
-tbody td {
-    width: 25%;
-    float: left;
-    text-align: left;
+#runtable {
+   data-striped: true;
 }
