@@ -3,6 +3,10 @@
     background-color: #F2F2F2;
 }
 
+.jumbotron {
+background-image: url("../img/icestorm.jpg");
+background-size: cover;}
+
 #email {
     color: black;
 }
