@@ -45,11 +45,34 @@ background-size: cover;}
    position:absolute;
 }
 
+#aboutme {
+	line-height: 50px;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
+h5 {
+	line-height: 18px;
+	margin-top: 0px;
+    margin-bottom: 20px;
+
+}
+
+h1, h2, h3, h4, h5, div{
+	font-family: "Garamond", "Palatino Linotype";
+
+}
+
+h2 {
+	font-weight: bold;
+}
+
+
 html {
   position: relative;
   min-height: 100%;
+ 
+  /*font-family: "Garamond", "Palatino Linotype";*/
 }
 body {
   /* Margin bottom by footer height */
