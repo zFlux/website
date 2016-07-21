@@ -10,19 +10,15 @@
 
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
   <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"></link>
-  <link rel="stylesheet" href="css/bootstrap-table.css"></link>
+  <link href="css/bootstrap-table.css" rel="stylesheet"></link>
   <link href="css/style.css" rel="stylesheet"></link>
-  <script src="websitejs/svgclock.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="websitejs/angularHomePageApp.js"></script>
-
 </head>
 <body>
 
 <!-- Start Main Banner -->
 <div id="jumbo" class="jumbotron container-fluid">
   <h1>{{homePage.name}}</h1>
-  <h4><a id="email" href="mailto:findme@danielchristo.com" target="_top">findme@danielchristo.com</a></h4>
+  <h4><a id="email" href="mailto:{{homePage.email}}" target="_top">{{homePage.email}}</a></h4>
   <a href="https://github.com/zFlux"><img src="img/icons/github-24x24.png" /></a>
   <a href="https://twitter.com/good_eipi"><img src="img/icons/twitter-24x24.png" /></a>
   <a href="https://ca.linkedin.com/pub/daniel-christo/27/ab0/a54/"><img src="img/icons/linkedin-24x24.png" /></a>
@@ -33,7 +29,7 @@
 </div>
 <!-- End Main Banner -->
 
-<!-- Start Summary -->
+<!-- Start Skill Summary (Column 1 and 2)-->
 <div class="panel-body">
   <div class="col-lg-3 greyfont" ng-repeat="skill in homePage.skills">
     <h2>{{skill.headingTitle}}</h2>
@@ -44,26 +40,28 @@
       </ul>
      </div>
   </div>
+
+  <!-- Start Running Table (Column 3)-->
   <div class="col-lg-6 greyfont" >
     <span class="hidden-xs">
     <h2>Runner</h2>
       <table data-toggle="table" data-height="228" data-striped="true">
-	<thead>
-	  <tr>
-	    <th data-sortable="true">Date</th>
-	    <th>Race</th>
-	    <th  data-sortable="true">Km</th>
-	    <th data-sortable="true">Time</th>
-	  </tr>
-	</thead>
-	<tbody>
-    <tr ng-repeat="race in homePage.races">
-     <td>{{race.date}}</td>
-     <td>{{race.race}}</td>
-     <td>{{race.km}}</td>
-     <td>{{race.time}}</td>
-    </tr>
-	</tbody>
+      	<thead>
+      	  <tr>
+      	    <th data-sortable="true">Date</th>
+      	    <th data-sortable="true">Race</th>
+      	    <th data-sortable="true">Km</th>
+      	    <th data-sortable="true">Time</th>
+      	  </tr>
+      	</thead>
+      	<tbody>
+          <tr ng-repeat="race in homePage.races">
+           <td>{{race.date}}</td>
+           <td>{{race.race}}</td>
+           <td>{{race.km}}</td>
+           <td>{{race.time}}</td>
+          </tr>
+      	</tbody>
       </table>
   </span>
   </div>
@@ -89,13 +87,16 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<script src="websitejs/svgclock.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="websitejs/angularHomePageApp.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="websitejs/bootstrap-table.js"></script>
 <span class="hidden-xs">
 <div class="footer">
-    <div id="bottomemail" class="text-muted">Email questions or comments to: <a id="email" href="mailto:findme@danielchristo.com" target="_top">findme@danielchristo.com</a></div>
-    <div id="copyright">© 2016 Daniel Christo. All Rights Reserved.</div>
+    <div id="bottomemail" class="text-muted">Email questions or comments to: <a id="email" href="mailto:{{homePage.email}}" target="_top">{{homePage.email}}</a></div>
+    <div id="copyright">© {{homePage.currentDate | date:'yyyy'}} Daniel Christo. All Rights Reserved.</div>
 </div>
 </span>
 

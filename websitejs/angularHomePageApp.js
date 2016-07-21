@@ -2,9 +2,12 @@ angular.module('homePageApp', [])
   .controller('homePageController', function() {
     this.name = "DANIEL CHRISTO";
 
-    this.svgClock = './svgclock.html';
+    this.email = "findme@danielchristo.com";
+    this.currentDate = new Date();
 
     this.races = [
+      {date:'2016/06/25', race:'Perth Kilt Run', km:'21', time:'2:34:50.3'},
+      {date:'2016/05/08', race:'Sporting Life 10k', km:'10', time:'0:49:30'},
       {date:'2016/04/03',	race:'Around the Bay Road Race', km:'30', time:'3:16:59'},
       {date:'2014/08/16',	race:'A Mid Summer Nights Run', km:'30', time:'2:56:42.2'},
       {date:'2013/10/20',	race:'Toronto Waterfront Marathon', km:'42.2', time:'4:50:02'},
