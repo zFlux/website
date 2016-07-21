@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="homePageApp" ng-controller="homePageController as homePage">
 <head>
   <title>Daniel Christo&#39;s Website</title>
 
@@ -13,85 +13,36 @@
   <link rel="stylesheet" href="css/bootstrap-table.css"></link>
   <link href="css/style.css" rel="stylesheet"></link>
   <script src="websitejs/svgclock.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="websitejs/angularHomePageApp.js"></script>
 
 </head>
 <body>
 
 <!-- Start Main Banner -->
 <div id="jumbo" class="jumbotron container-fluid">
-  <h1>DANIEL CHRISTO</h1>
+  <h1>{{homePage.name}}</h1>
   <h4><a id="email" href="mailto:findme@danielchristo.com" target="_top">findme@danielchristo.com</a></h4>
   <a href="https://github.com/zFlux"><img src="img/icons/github-24x24.png" /></a>
   <a href="https://twitter.com/good_eipi"><img src="img/icons/twitter-24x24.png" /></a>
   <a href="https://ca.linkedin.com/pub/daniel-christo/27/ab0/a54/"><img src="img/icons/linkedin-24x24.png" /></a>
   <a href="https://www.facebook.com/daniel.christo.5"><img src="img/icons/facebook-24x24.png" /></a>
   <span class="hidden-xs">
-  <svg id="svgclock" onload="init(evt)">
-    <defs>
-      <path id="clkCircle" d=""></path>
-      <path id="minute" d=""></path>
-      <path id="hour" d=""></path>
-      <path id="second" d=""></path>
-    </defs>
-    <text font-size="24" >
-      <textPath xlink:href="#clkCircle">
-	The Time Is Now.
-	The Time Is Now.
-	The Time Is Now.
-      </textPath>
-    </text>
-    <text font-size="10">
-      <textPath xlink:href="#minute">
-	TheTimeIsNow
-      </textPath>
-    </text>
-    <text font-size="10">
-      <textPath xlink:href="#hour">
-	NowNow
-      </textPath>
-    </text>
-    <text font-size="9">
-      <textPath xlink:href="#second">
-	TheTimeIsRightNow
-      </textPath>
-    </text>
-  </svg>
+     <ng-include src="'svg/svgclock.svg'"></ng-include>
   </span>
 </div>
 <!-- End Main Banner -->
 
 <!-- Start Summary -->
 <div class="panel-body">
-  <div class="col-lg-3 greyfont">
-    <h2>Database Programmer</h2>
-	<h3>PL/SQL</h3>
-    <ul>
-      <li>Oracle PL/SQL, Microsoft T-SQL</li>
-      <li>PostgreSQL PL/pgSQL, DB2, MySQL</li>
-    </ul>
-	<h3>Data Warehousing</h3>
-    <ul>
-      <li>Microsoft SSIS & Talend</li>
-    </ul>
-    <h3>Reporting</h3>
-    <ul>
-      <li>Microsoft SSRS, Crystal Reports XI & Cognos</li>
-    </ul>
-  </div>
-  <div class="col-lg-3 greyfont">
-    <h2>Web Developer</h2>
-    <h3>RESTful Web Services</h3>
-    <ul>
-      <li>Java Spring Framework</li>
-    </ul>
-	<h3>Front-end Development</h3>
-    <ul>
-      <li>Javascript, HTML & CSS</li>
-    </ul>
-	<h3>Web Development</h3>
-	<ul>
-      <li>PHP, Python & Perl</li>
-    </ul>
+  <div class="col-lg-3 greyfont" ng-repeat="skill in homePage.skills">
+    <h2>{{skill.headingTitle}}</h2>
+      <div ng-repeat="subHeading in skill.subHeadings" >
+      <h3>{{subHeading.subHeadingTitle}}</h3>
+       <ul>
+        <li ng-repeat="item in subHeading.subHeadingItems">{{item}}</li>
+      </ul>
+     </div>
   </div>
   <div class="col-lg-6 greyfont" >
     <span class="hidden-xs">
@@ -106,108 +57,12 @@
 	  </tr>
 	</thead>
 	<tbody>
-    <tr>
-      <td>2016/04/03</td>
-      <td>Around the Bay Road Race</td>
-      <td>30</td>
-      <td>3:16:59</td>
+    <tr ng-repeat="race in homePage.races">
+     <td>{{race.date}}</td>
+     <td>{{race.race}}</td>
+     <td>{{race.km}}</td>
+     <td>{{race.time}}</td>
     </tr>
-	  <tr>
-	    <td>2014/08/16</td>
-	    <td>A Mid Summer Nights Run</td>
-	    <td>30</td>
-	    <td>2:56:42.2</td>
-	  </tr>
-	  <tr>
-	    <td>2014/05/11</td>
-	    <td>Sporting Life 10k</td>
-	    <td>10</td>
-	    <td>0:51:16.7</td>
-	  </tr>
-	  <tr>
-	    <td>2013/10/20</td>
-	    <td>Toronto Waterfront Marathon</td>
-	    <td>42.2</td>
-	    <td>4:50:02</td>
-	  </tr>
-	  <tr>
-	    <td>2013/09/11</td>
-	    <td>Mount Robson Marathon</td>
-	    <td>42.2</td>
-	    <td>6:22:53.7</td>
-	  </tr>
-	  <tr>
-	    <td>2013/08/17</td>
-	    <td>A Mid Summer Nights Run</td>
-	    <td>30</td>
-	    <td>3:03:59.1</td>
-	  </tr>
-	  <tr>
-	    <td>2013/05/12</td>
-	    <td>Sporting Life 10k</td>
-	    <td>10</td>
-	    <td>0:48:24</td>
-	  </tr>
-	  <tr>
-	    <td>2013/04/21</td>
-	    <td>Toronto Yonge Street 10k</td>
-	    <td>10</td>
-	    <td>0:49:34</td>
-	  </tr>
-	  <tr>
-	    <td>2012/10/14</td>
-	    <td>Toronto Waterfront Marathon</td>
-	    <td>42.2</td>
-	    <td>4:36:39.0</td>
-	  </tr>
-	  <tr>
-	    <td>2012/08/18</td>
-	    <td>A Mid Summer Nights Run</td>
-	    <td>30</td>
-	    <td>3:04:24.4</td>
-	  </tr>
-	  <tr>
-	    <td>2012/03/25</td>
-	    <td>Around the Bay Road Race</td>
-	    <td>30</td>
-	    <td>3:18:01.1</td>
-	  </tr>
-	  <tr>
-	    <td>2011/10/01</td>
-	    <td>Run for the Toad </td>
-	    <td>25</td>
-	    <td>3:18:44</td>
-	  </tr>
-	  <tr>
-	    <td>2011/09/24</td>
-	    <td>ZooRun 10k</td>
-	    <td>10</td>
-	    <td>0:56:47.6</td>
-	  </tr>
-	  <tr>
-	    <td>2011/05/01</td>
-	    <td>Sporting Life Toronto 10k</td>
-	    <td>10</td>
-	    <td>0:58:49.7</td>
-	  </tr>
-	  <tr>
-	    <td>2011/03/27</td>
-	    <td>Around the Bay Road Races</td>
-	    <td>30</td>
-	    <td>3:24:06.5</td>
-	  </tr>
-	  <tr>
-	    <td>2010/09/26</td>
-	    <td>Toronto Waterfront Marathon</td>
-	    <td>42.2</td>
-	    <td>5:05:22.3</td>
-	  </tr>
-	  <tr>
-	    <td>2010/08/21</td>
-	    <td>A Mid Summer Nights Run</td>
-	    <td>30</td>
-	    <td>3:13:30.4</td>
-	  </tr>
 	</tbody>
       </table>
   </span>
@@ -224,13 +79,7 @@
   <div class="row">
     <div id="aboutme" class="col-lg-10">
       <h2>About me</h2>
-	  <h4>Utilizing software engineering best practices, I have worked with retail and financial industry partners to develop or repair business critical database and web service solutions.
-	  For Canadian Tire and Loblaws, I built real-time supply chain management reports that streamlined the day-to-day movement of automotive and grocery product across their businesses.
-	  For H&R Block and The Jonah Group, I provided data warehouse solutions to monitor sales and financial profitability. Currently, I am working with my team at Jonah Group to replace the Ontario
-	  Teacher’s Pension Plan’s existing web-based system for teachers to monitor their benefits accrual to date.</h4>
-      <h4>I am most motivated when faced with a challenging real-world problem that requires software programming to solve.  I work quickly and effectively to understand the technical needs of the business
-      so that I can provide the right solutions for them to achieve success.</h4>
-      <h4>Findme@danielchristo.com to discuss your business needs and how I may be of help.</h4>
+	    <h4 ng-repeat="paragraph in homePage.aboutMeParagraphs">{{paragraph}}</h4>
     </div>
     <div class="col-lg-2 greyfont"></div>
   </div>
@@ -241,8 +90,7 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="dist/js/bootstrap.min.js"></script>
-<script src="../../assets/js/docs.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="websitejs/bootstrap-table.js"></script>
 <span class="hidden-xs">
 <div class="footer">
