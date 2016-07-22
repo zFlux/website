@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="homePageApp" ng-controller="homePageController as homePage">
 <head>
-  <title>Daniel Christo&#39;s Website</title>
+  <title>{{homePage.name}}&#39;s Website</title>
 
   <meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-  <meta name="description" content="Daniel Christo's Website"></meta>
-  <meta name="author" content="Daniel Christo"></meta>
+  <meta name="description" content="{{homePage.name}}'s Website"></meta>
+  <meta name="author" content="{{homePage.name}}"></meta>
 
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
   <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"></link>
@@ -17,12 +17,9 @@
 
 <!-- Start Main Banner -->
 <div id="jumbo" class="jumbotron container-fluid">
-  <h1>{{homePage.name}}</h1>
+  <h1>{{homePage.name | uppercase}}</h1>
   <h4><a id="email" href="mailto:{{homePage.email}}" target="_top">{{homePage.email}}</a></h4>
-  <a href="https://github.com/zFlux"><img src="img/icons/github-24x24.png" /></a>
-  <a href="https://twitter.com/good_eipi"><img src="img/icons/twitter-24x24.png" /></a>
-  <a href="https://ca.linkedin.com/pub/daniel-christo/27/ab0/a54/"><img src="img/icons/linkedin-24x24.png" /></a>
-  <a href="https://www.facebook.com/daniel.christo.5"><img src="img/icons/facebook-24x24.png" /></a>
+  <a ng-repeat="link in homePage.links" href="{{link.link}}"><img src="img/icons/{{link.image}}" /></a>
   <span class="hidden-xs">
      <ng-include src="'svg/svgclock.svg'"></ng-include>
   </span>
@@ -87,16 +84,16 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<script src="angular/angular.min.js"></script>
+<script src="jquery/jquery-1.11.3.min.js"></script>
 <script src="websitejs/svgclock.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 <script src="websitejs/angularHomePageApp.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="websitejs/bootstrap-table.js"></script>
+
 <span class="hidden-xs">
 <div class="footer">
     <div id="bottomemail" class="text-muted">Email questions or comments to: <a id="email" href="mailto:{{homePage.email}}" target="_top">{{homePage.email}}</a></div>
-    <div id="copyright">© {{homePage.currentDate | date:'yyyy'}} Daniel Christo. All Rights Reserved.</div>
+    <div id="copyright">© {{homePage.currentDate | date:'yyyy'}} {{homePage.name}}. All Rights Reserved.</div>
 </div>
 </span>
 

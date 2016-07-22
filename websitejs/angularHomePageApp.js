@@ -1,9 +1,16 @@
 angular.module('homePageApp', [])
   .controller('homePageController', function() {
-    this.name = "DANIEL CHRISTO";
+    this.name = "Daniel Christo";
 
     this.email = "findme@danielchristo.com";
     this.currentDate = new Date();
+
+    this.links = [
+      {link:'https://github.com/zFlux', image:'github-24x24.png'},
+      {link:'https://twitter.com/good_eipi', image:'twitter-24x24.png'},
+      {link:'https://ca.linkedin.com/pub/daniel-christo/27/ab0/a54/', image:'linkedin-24x24.png'},
+      {link:'https://www.facebook.com/daniel.christo.5', image:'facebook-24x24.png'}
+    ];
 
     this.races = [
       {date:'2016/06/25', race:'Perth Kilt Run', km:'21', time:'2:34:50.3'},
@@ -35,8 +42,8 @@ angular.module('homePageApp', [])
            ]
       },
       { headingTitle: 'Web Developer', subHeadings:
-            [ {subHeadingTitle: 'RESTful Web Services', subHeadingItems: ['Java Spring Framework'] },
-              {subHeadingTitle: 'Front-end Development', subHeadingItems: ['Javascript, HTML & CSS'] },
+            [ {subHeadingTitle: 'RESTful Web Services', subHeadingItems: ['Java Spring Framework', 'Sails.js, Node.js, RAML'] },
+              {subHeadingTitle: 'Front-end Development', subHeadingItems: ['Angular, JQuery', 'HTML & CSS'] },
               {subHeadingTitle: 'Web Development', subHeadingItems: ['PHP, Python & Perl'] }
            ]
       }
