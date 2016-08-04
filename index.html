@@ -59,7 +59,16 @@
            <td>{{race.time}}</td>
           </tr>
       	</tbody>
+        <tfoot>
+          <tr>
+            <th data-sortable="true">{{homePage.totalTimeRunningYears}} Years and {{homePage.totalTimeRunningDays}} Days </th>
+            <th data-sortable="true">Total Races: {{homePage.totalRaces}}</th>
+            <th data-sortable="true">Total Km: {{homePage.totalKm}}</th>
+            <th data-sortable="true">Total Time: {{homePage.totalHours}}:{{homePage.totalMinutes}}:{{homePage.totalSeconds}}</th>
+          </tr>
+        </tfoot>
       </table>
+      <div></div>
   </span>
   </div>
 </div>
