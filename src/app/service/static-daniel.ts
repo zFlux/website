@@ -67,6 +67,6 @@ export const DANIEL: Daniel = {
   'to solve.  I work quickly and effectively to understand the technical needs of the business so that I can provide the right '+
   'solutions for them to achieve success.',
 
-  'Findme@danielchristo.com to discuss your business needs and how I may be of help.']
+  'findme@danielchristo.com to discuss your business needs and how I may be of help.']
 
 }
