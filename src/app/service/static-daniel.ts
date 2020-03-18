@@ -11,6 +11,7 @@ export const DANIEL: Daniel = {
   ],
 
   races: [
+    {date:'2019-10-20', race:'Toronto Waterfront Marathon', km:'42.2', time: '4:17:17'},
     {date:'2019-03-31', race:'Around the Bay Road Race', km:'30', time:'2:45:13'},
     {date:'2018-10-21', race:'Toronto Waterfront Marathon', km:'42.2', time:'4:26:26'},
     {date:'2016-06-25', race:'Perth Kilt Run', km:'21', time:'2:34:50.3'},
