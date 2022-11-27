@@ -1,18 +1,28 @@
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { NgxDatatableModule } from '@swimlane/ngx-datatable/release/index';
-import { AppComponent }  from './component/app.component';
-import { ResumeHeaderComponent } from './component/resume-header/resume-header.component';
-import { SvgClockComponent } from './component/svg-clock/svg-clock.component';
-import { SkillsBlockComponent } from './component/skills-block/skills-block.component';
-import { RunningTableComponent } from './component/running-table/running-table.component';
-import { AboutMeComponent } from './component/about-me/about-me.component';
+
+import { AppComponent } from './app.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ResumeHeaderComponent } from './resume-header/resume-header.component';
+import { RunningTableComponent } from './running-table/running-table.component';
+import { SkillsBlockComponent } from './skills-block/skills-block.component';
+import { SvgClockComponent } from './svg-clock/svg-clock.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, NgxDatatableModule],
-  declarations: [ AppComponent, ResumeHeaderComponent, SvgClockComponent, SkillsBlockComponent, RunningTableComponent, AboutMeComponent],
-  bootstrap:    [ AppComponent ]
+  declarations: [
+    AppComponent,
+    AboutMeComponent,
+    ResumeHeaderComponent,
+    RunningTableComponent,
+    SkillsBlockComponent,
+    SvgClockComponent
+  ],
+  imports: [
+    BrowserModule,
+    NgxDatatableModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
