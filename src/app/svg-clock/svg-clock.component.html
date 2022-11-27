@@ -1,0 +1,30 @@
+<svg  #svgclock id="svgclock" [style.width]="clockCssWidth" [style.height]="clockCssHeight">
+    <defs>
+      <path id='clkCircle' [attr.d]="circlePath" [attr.transform]="circleTransform"></path>
+      <path id="minute" [attr.d]="minuteHand"></path>
+      <path id="hour" [attr.d]="hourHand"></path>
+      <path id="second" [attr.d]="secondHand"></path>
+    </defs>
+    <text font-size="24" >
+      <textPath xlink:href="#clkCircle">
+        The Time Is Now.
+        The Time Is Now.
+        The Time Is Now.
+      </textPath>
+    </text>
+    <text font-size="10">
+      <textPath xlink:href="#minute">
+        TheTimeIsNow
+      </textPath>
+    </text>
+    <text font-size="10">
+      <textPath xlink:href="#hour">
+        NowNow
+      </textPath>
+    </text>
+    <text font-size="9">
+      <textPath xlink:href="#second">
+        TheTimeIsRightNow
+      </textPath>
+    </text>
+  </svg>

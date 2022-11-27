@@ -1,0 +1,20 @@
+<div *ngIf="daniel">
+  <app-resume-header [daniel]="daniel"></app-resume-header>
+
+  <div class="panel-body">
+      <div class="col-lg-6 greyfont">
+        <app-skills-block [skills]="daniel.skills"></app-skills-block>
+      </div>
+      <div class="col-lg-6 greyfont">
+        <app-running-table [races]="daniel.races"></app-running-table>
+      </div>
+  </div>
+  <div id="pagebreak"></div>
+  <app-about-me [aboutMeParagraphs]="daniel.aboutMeParagraphs"></app-about-me>
+  <span class="hidden-xs">
+    <div class="footer">
+        <div id="bottomemail" class="text-muted">Email questions or comments to: <a id="email" href="mailto:{{daniel.email}}" target="_top">{{daniel.email}}</a></div>
+        <div id="copyright">© {{daniel.currentDate | date:'yyyy'}} {{daniel.name}}. All Rights Reserved.</div>
+    </div>
+  </span>
+</div>
