@@ -16,9 +16,9 @@ export class RunningTableComponent {
   }
 
   columns = [
-    { name: 'Date' },
-    { name: 'Race' },
-    { name: 'Km' },
-    { name: 'Time'}
+    { name: 'Date', width: 100 },
+    { name: 'Race', width: 200 },
+    { name: 'Km', width: 75 },
+    { name: 'Time', width: 75}
   ];
 }
