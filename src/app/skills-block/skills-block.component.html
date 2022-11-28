@@ -1,6 +1,6 @@
   <h2 id="skillsheader">Software Developer</h2>
-  <div class="panel-body">
-    <div class="col-lg-6 greyfont" *ngFor="let skill of skills">
+  <div id="skills">
+    <div class="skill" *ngFor="let skill of skills">
       <h3>{{skill.skillTitle}}</h3>
       <div *ngFor="let skillDetail of skill.skillDetails" >
         <h4>{{skillDetail.skillDetailTitle}}</h4>
