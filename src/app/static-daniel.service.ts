@@ -44,29 +44,29 @@ export const DANIEL: Daniel = {
   totalTimeRunningDays: 0,
 
   skills: [
+    { skillTitle: 'Web Developer', skillDetails:
+          [ {skillDetailTitle: 'RESTful Web Services', skillDetailItems: ['Rails', 'Spring Framework', 'Node.js / Next.js'] },
+            {skillDetailTitle: 'Front-end Development', skillDetailItems: ['React / Angular', 'HTML / CSS / SCSS'] },
+            {skillDetailTitle: 'Web Development', skillDetailItems: ['Typescript / Javascript', 'Ruby / PHP / Python / Perl'] }
+          ]
+    },
     { skillTitle: 'Database Programmer', skillDetails:
           [ {skillDetailTitle: 'PL/SQL', skillDetailItems: ['Oracle PL/SQL, Microsoft T-SQL', 'PostgreSQL PL/pgSQL, DB2, MySQL'] },
             {skillDetailTitle: 'Data Warehousing', skillDetailItems: ['Microsoft SSIS & Talend'] },
             {skillDetailTitle: 'Reporting', skillDetailItems: ['Microsoft SSRS, Crystal Reports XI & Cognos'] }
          ]
-    },
-    { skillTitle: 'Web Developer', skillDetails:
-          [ {skillDetailTitle: 'RESTful Web Services', skillDetailItems: ['Java Spring Framework', 'Hapi.js, Sails.js, Node.js, RAML'] },
-            {skillDetailTitle: 'Front-end Development', skillDetailItems: ['Angular 1/2, JQuery', 'HTML & CSS'] },
-            {skillDetailTitle: 'Web Development', skillDetailItems: ['PHP, Python & Perl'] }
-         ]
     }
   ],
 
-  aboutMeParagraphs: ['Utilizing software engineering best practices, I have worked with retail and financial ' +
-  'industry partners to develop or repair business critical database and web service solutions. For Canadian ' +
+  aboutMeParagraphs: ['Utilizing software engineering best practices, I have worked with retail, financial ' +
+  'and ed-tech industry partners to develop or repair business critical web service and database solutions. For Canadian ' +
   'Tire and Loblaws, I built real-time supply chain management reports that streamlined the day-to-day movement '+
   'of automotive and grocery product across their businesses. For H&R Block and The Jonah Group, I provided data'+
-  ' warehouse solutions to monitor sales and financial profitability. Currently, I am working with my team at Jonah '+
-  'Group to replace the Ontario Teacher’s Pension Plan’s existing web-based system for teachers to monitor their benefits'+
-  ' accrual to date.',
+  ' warehouse solutions to monitor sales and financial profitability. With my team at Jonah '+
+  'Group we replaced Ontario Teacher’s Pension Plan’s existing web-based system for teachers to monitor their benefits'+
+  ' accrual to date and at Thinkific I built the App Store, a first party App and am working on Identity IAM solutions.',
 
-  'I am most motivated when faced with a challenging real-world problem that requires software programming '+
+  'I am most motivated when faced with a challenging customer-focused problem that requires software programming '+
   'to solve.  I work quickly and effectively to understand the technical needs of the business so that I can provide the right '+
   'solutions for them to achieve success.',
 
