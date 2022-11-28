@@ -12,8 +12,8 @@ export class SvgClockComponent {
   minuteHand!: string;
   hourHand!: string;
 
-  clockWidth: number = 257;
-  clockHeight: number = 257;
+  clockWidth: number = 225;
+  clockHeight: number = 225;
   clockCssWidth!: string;
   clockCssHeight!: string;
 

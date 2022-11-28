@@ -1,11 +1,11 @@
 <div *ngIf="daniel">
   <app-resume-header [daniel]="daniel"></app-resume-header>
 
-  <div class="panel-body">
-      <div class="col-lg-6 greyfont">
+  <div id="cv-body">
+      <div id="two-skills">
         <app-skills-block [skills]="daniel.skills"></app-skills-block>
       </div>
-      <div class="col-lg-6 greyfont">
+      <div id="races">
         <app-running-table [races]="daniel.races"></app-running-table>
       </div>
   </div>
