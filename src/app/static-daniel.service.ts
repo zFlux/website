@@ -45,7 +45,7 @@ export const DANIEL: Daniel = {
 
   skills: [
     { skillTitle: 'Web Developer', skillDetails:
-          [ {skillDetailTitle: 'RESTful Web Services', skillDetailItems: ['Rails', 'Spring Framework', 'Node.js / Next.js'] },
+          [ {skillDetailTitle: 'RESTful Web Services', skillDetailItems: ['Node.js / Next.js', 'Spring Framework', 'Rails'] },
             {skillDetailTitle: 'Front-end Development', skillDetailItems: ['React / Angular', 'HTML / CSS / SCSS'] },
             {skillDetailTitle: 'Web Development', skillDetailItems: ['Typescript / Javascript', 'Ruby / PHP / Python / Perl'] }
           ]
