@@ -4,10 +4,10 @@ export const DANIEL: Daniel = {
   email: "findme@danielchristo.com",
   currentDate: new Date(),
   links: [
-    {link:'https://github.com/zFlux', image:'github-24x24.png'},
-    {link:'https://twitter.com/good_eipi', image:'twitter-24x24.png'},
-    {link:'https://ca.linkedin.com/pub/daniel-christo/27/ab0/a54/', image:'linkedin-24x24.png'},
-    {link:'https://www.facebook.com/daniel.christo.5', image:'facebook-24x24.png'}
+    {link:'https://github.com/zFlux', image:'github-24x24.png', label: "Daniel Christo's Github Link"},
+    {link:'https://twitter.com/good_eipi', image:'twitter-24x24.png', label: "Daniel Christo's Twitter Link"},
+    {link:'https://ca.linkedin.com/pub/daniel-christo/27/ab0/a54/', image:'linkedin-24x24.png', label: "Daniel Christo's Github Link"},
+    {link:'https://www.facebook.com/daniel.christo.5', image:'facebook-24x24.png', label: "Daniel Christo's Facebook Link"},
   ],
 
   races: [
@@ -51,7 +51,7 @@ export const DANIEL: Daniel = {
           ]
     },
     { skillTitle: 'Database Programmer', skillDetails:
-          [ {skillDetailTitle: 'PL/SQL', skillDetailItems: ['Oracle PL/SQL, Microsoft T-SQL', 'PostgreSQL PL/pgSQL, DB2, MySQL'] },
+          [ {skillDetailTitle: 'PL/SQL', skillDetailItems: ['PostgreSQL PL/pgSQL, MySQL','Oracle PL/SQL, Microsoft T-SQL'] },
             {skillDetailTitle: 'Data Warehousing', skillDetailItems: ['Microsoft SSIS & Talend'] },
             {skillDetailTitle: 'Reporting', skillDetailItems: ['Microsoft SSRS, Crystal Reports XI & Cognos'] }
          ]
