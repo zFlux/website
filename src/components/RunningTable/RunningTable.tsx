@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import './RunningTable.scss';
-import { DANIEL } from '../../static-daniel.service';
+import { DANIEL } from '../../services/static-daniel.service';
 import Table from '../Table/Table';
 
 interface RunningTableProps {}

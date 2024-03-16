@@ -1,12 +1,8 @@
-#aboutme {
-    font-family: 'Muli',sans-serif;
-	line-height: 20px;
-    margin: 20px;
-    text-align: center;
-}
-
-#aboutmeparts {
-    line-height: 18px;
-    margin-top: 0px;
-    margin-bottom: 10px;
+.AboutMe {
+    .Paragraphs {
+        font-family:  "Rosarivo", cursive;
+        font-size: 2rem;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
 }

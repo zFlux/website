@@ -1,29 +1,28 @@
 import React, { FC } from 'react';
 import './AboutMe.scss';
-import { DANIEL } from '../../static-daniel.service';
 
-interface AboutMeProps {}
+// add a list of paragraphs to the props
+interface AboutMeProps {
+  aboutMeParagraphs: string[];
+}
 
 // function to generate the about me paragraphs
-const generateAboutMeParagraphs = () => {
-  const aboutMeParagraphs = [];
-  for (const paragraph of DANIEL.aboutMeParagraphs) {
-    aboutMeParagraphs.push(
-      <p className="aboutme-paragraph" key={paragraph}>
+const generateAboutMeParagraphs = (aboutMeParagraphs: string[]) => {
+  const paragraphs = [];
+  for (const paragraph of aboutMeParagraphs) {
+    paragraphs.push(
+      <p className= "Paragraph" key={paragraph}>
         {paragraph}
       </p>
     );
   }
-  return aboutMeParagraphs;
+  return paragraphs;
 };
 
-const AboutMe: FC<AboutMeProps> = () => (
-  <div className="container">
-    <div id="aboutme">
-      <h2 id="aboutme-title">About me</h2>
-      <div id="aboutme-paragraphs">
-        <div id="aboutmeparts">{generateAboutMeParagraphs()}</div>
-      </div>
+const AboutMe: FC<AboutMeProps> = (props: AboutMeProps) => (
+  <div className="AboutMe">
+    <div className="Paragraphs">
+      {generateAboutMeParagraphs(props.aboutMeParagraphs)}
     </div>
   </div>
 );

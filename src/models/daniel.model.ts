@@ -4,6 +4,7 @@ import { Skill } from './skill.model';
 
 export class Daniel {
     name!: string;
+    resume!: string;
     email!: string;
     currentDate!: Date;
     links!: Link[];

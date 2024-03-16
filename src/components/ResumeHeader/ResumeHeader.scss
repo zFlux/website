@@ -1,20 +1,38 @@
-#resume-header {
-    background-image: url("../../assets/img/icestorm.jpg");
+.ResumeHeader {
+    display: flex;
+    background-image: url("../../../public/assets/img/stock_wood.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 230px;
-    top: 0px;
+    height: 260px;
     padding: 10px;
-    border-top-width: 0px;
-    margin: 0px;
-}
+    .Banner {
+        width: 100%;
+        .Name {
+            font-size: 5.2rem;
+            font-weight: bold;
+            font-family: "Loved by the King", cursive;
+        }
+        .Link {
+            padding: 2px;
+        }
+        .Email {
+            padding-bottom: 20px;
+            color: black;
+            font-size: 1.2rem;
+        }
+        .Resume {
+            padding-bottom: 10px;
+            color: black;
+            font-size: 1.2rem;
+        }
+    }
 
-#resume-name {
-    font-size: 40px;
-}
 
-// render email font in black
-#email {
-    padding-bottom: 10px;
-    color: black;
+    
+
+
+    @media screen and (max-width: 350px)
+    {
+        height: 350px;
+    }
 }

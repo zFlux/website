@@ -18,7 +18,7 @@ const SvgClock: FC<SvgClockProps> = (props) => {
   useEffect(() => {
     const ClockCentreX = props.clockWidth / 2;
     const ClockCentreY = props.clockHeight / 2;
-    const ClockRadius = 85;
+    const ClockRadius = 95;
     const SecondHandRadius = ClockRadius - 5;
     const MinuteHandRadius = ClockRadius - 10;
     const HourHandRadius = ClockRadius - 15;
