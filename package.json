@@ -21,8 +21,10 @@
     "start": "react-scripts start --downlevelIteration",
     "build": "BUILD_PATH='./docs' react-scripts build",
     "test": "react-scripts test",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
+  "homepage": "/docs",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -40,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
