@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
-  "homepage": "/docs",
+  "homepage": "https://zFlux.github.io/website",
   "eslintConfig": {
     "extends": [
       "react-app",
