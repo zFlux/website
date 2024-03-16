@@ -2,7 +2,19 @@
     .Paragraphs {
         font-family:  "Rosarivo", cursive;
         font-size: 2rem;
+        // CENTERED
+        text-align: center;
         padding-left: 140px;
         padding-right: 140px;
+
+        @media screen and (max-width: 500px){
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    @media screen and (max-width: 350px){
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
