@@ -1,0 +1,38 @@
+.ResumeHeader {
+    display: flex;
+    background-image: url("../../../public/assets/img/stock_wood.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 260px;
+    padding: 10px;
+    .Banner {
+        width: 100%;
+        .Name {
+            font-size: 5.2rem;
+            font-weight: bold;
+            font-family: "Loved by the King", cursive;
+        }
+        .Link {
+            padding: 2px;
+        }
+        .Email {
+            padding-bottom: 20px;
+            color: black;
+            font-size: 1.2rem;
+        }
+        .Resume {
+            padding-bottom: 10px;
+            color: black;
+            font-size: 1.2rem;
+        }
+    }
+
+
+    
+
+
+    @media screen and (max-width: 350px)
+    {
+        height: 350px;
+    }
+}

@@ -1,0 +1,25 @@
+
+.SkillBlock {
+   font-family:  "Rosarivo", cursive;
+   width: 400px;
+    .Title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .Details {
+        .Title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .Items {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+}

@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  a:visited {
+    color: black;
+  }
+
+}
+
+.center_content {
+  display: inline-flex;
+}

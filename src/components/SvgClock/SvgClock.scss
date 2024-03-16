@@ -1,0 +1,23 @@
+#svgclock {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:  235px;
+    height: 235px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#clock-circle {
+  font-size: 24.6px;
+}
+
+#minute-hand {
+  font-size: 11.5px;
+}
+
+#second-hand {
+  font-size: 9px;
+}
+
+// @media screen and (max-width: 550px) {
+//   #svgclock { display: none; }  /* show it on small screens */
+// }
