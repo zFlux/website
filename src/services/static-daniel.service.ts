@@ -1,7 +1,7 @@
 import { Daniel } from '../models/daniel.model';
 export const DANIEL: Daniel = {
   name: "Daniel Christo",
-  resume: "https://1drv.ms/w/s!Ag1zPaHmU_oxmRyEBt8Vg6NY9K7I",
+  resume: "/website/assets/Daniel_Christo_CV.pdf",
   email: "findme@danielchristo.com",
   currentDate: new Date(),
   links: [
