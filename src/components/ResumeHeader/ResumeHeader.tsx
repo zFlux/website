@@ -22,7 +22,7 @@ const ResumeHeader: FC<ResumeHeaderProps> = (props: ResumeHeaderProps) => (
   <div className="ResumeHeader">
     <div className="Banner">
       <div className="Name">{props.name}</div>
-      <div className="Résumé"><a href={props.resume} target="_blank" rel='noreferrer'>Resume</a></div>
+      <div className="Resume"><a href={props.resume} target="_blank" rel='noreferrer'>Résumé</a></div>
       <div className="Email"><a className="Email" href={"mailto:" + props.email} target="_top">{props.email}</a></div>
       <div className="Links">{generateLinks(props.links)}</div>
     </div>
