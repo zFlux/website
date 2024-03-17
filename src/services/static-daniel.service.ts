@@ -1,12 +1,12 @@
 import { Daniel } from '../models/daniel.model';
 export const DANIEL: Daniel = {
   name: "Daniel Christo",
-  resume: "/assets/Daniel_Christo_CV.pdf",
+  resume: "/assets/daniel_christo_cv.pdf",
   email: "findme@danielchristo.com",
   currentDate: new Date(),
   links: [
-    {link:'https://github.com/zFlux', image:'github-24x24.png', label: "Daniel Christo's Github Link", altText: "Github"},
-    {link:'https://ca.linkedin.com/pub/daniel-christo/27/ab0/a54/', image:'linkedin-24x24.png', label: "Daniel Christo's Github Link", altText: "LinkedIn"}  ],
+    {link:'https://github.com/zFlux', image:'github.svg', label: "Daniel Christo's Github Link", altText: "Github"},
+    {link:'https://ca.linkedin.com/pub/daniel-christo/27/ab0/a54/', image:'linkedin.svg', label: "Daniel Christo's LinkedIn Link", altText: "LinkedIn"}  ],
 
   races: [
     {date:'2019-10-20', race:'Toronto Waterfront Marathon', km:'42.2', time: '4:17:17'},
@@ -57,7 +57,7 @@ export const DANIEL: Daniel = {
 
   aboutMeParagraphs: [
   'I build software for humans. I love it, and I\'m good at it. ', 
-  'I\'m experienced with web services and database development using ' + 
+  'I\'m an experienced web services and database developer using ' + 
   'Java Spring, Ruby on Rails, Postgresql and Oracle PL/SQL. Most recently I\'ve been working ' +
   'with React and GraphQL. ',
   'findme@danielchristo.com to discuss your business needs and how I may be of help.']

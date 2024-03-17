@@ -13,7 +13,7 @@ interface ResumeHeaderProps {
 const generateLinks = (links: Link[]) => {
   const linksJsx = [];
   for (const link of links) {
-    linksJsx.push(<a href={link.link} aria-label={link.label} className="Link" key={link.link} target="_blank" rel='noreferrer'><img id="header-image" src={"/assets/img/icons/" + link.image} alt={link.altText}/></a>)
+    linksJsx.push(<a href={link.link} aria-label={link.label} className="Link" key={link.link} target="_blank" rel='noreferrer'><img className="Image" src={"/assets/img/icons/" + link.image} alt={link.altText}/></a>)
   }
   return linksJsx;
 };
