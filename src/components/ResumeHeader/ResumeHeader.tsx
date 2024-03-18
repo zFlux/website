@@ -20,6 +20,7 @@ const generateLinks = (links: Link[]) => {
 
 const ResumeHeader: FC<ResumeHeaderProps> = (props: ResumeHeaderProps) => (
   <div className="ResumeHeader">
+    <img className="Background" src="/assets/img/stock_wood.webp" alt="Wood"/>
     <div className="Banner">
       <div className="Name">{props.name}</div>
       <div className="Resume"><a href={props.resume} target="_blank" rel='noreferrer'>Résumé</a></div>
