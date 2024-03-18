@@ -2,7 +2,7 @@
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 260px;
+    height: 280px;
     .Background {
         border: 0;
         padding: 0;
@@ -17,7 +17,6 @@
             font-size: 5.2rem;
             font-weight: bold;
             font-family: "Loved by the King", cursive;
-            padding-bottom: 10px;
         }
         .Link {
             padding: 2px;
@@ -44,7 +43,7 @@
     }
     @media screen and (max-width: 400px)
     {
-        height: 430px;
+        height: 450px;
         width: 380px;
         .Background {
             height: 430px;
