@@ -23,9 +23,10 @@ const ResumeHeader: FC<ResumeHeaderProps> = (props: ResumeHeaderProps) => (
     <img className="Background" src="/assets/img/stock_wood.webp" alt="Wood"/>
     <div className="Banner">
       <div className="Name">{props.name}</div>
-      <div className="Resume"><a href={props.resume} target="_blank" rel='noreferrer'>Résumé</a></div>
       <div className="Email"><a className="Email" href={"mailto:" + props.email} target="_top">{props.email}</a></div>
-      <div className="Links">{generateLinks(props.links)}</div>
+      <div className="Links">{generateLinks(props.links)}
+        <div className='ResumeContainer'><a href={props.resume} target="_blank" rel='noreferrer' className='Resume'>Résumé</a></div>
+      </div>
     </div>
   </div>
 );
