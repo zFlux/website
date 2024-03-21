@@ -26,7 +26,7 @@
             border: 2px solid wheat;
         }
         .Email {
-            padding-bottom: 20px;
+            padding-bottom: 5px;
             color: black;
             font-size: 1.2rem;
         }
@@ -38,19 +38,78 @@
                 padding: 2px;
                 width: 20px;
                 height: 20px;
-
             }
             .Resume {
-                border: 1px solid #ffffff;
-                border-radius: 14%;
-                background-color: black;
-                color: white;
-                padding: 5px;
-                text-align: center;
+                // add space between the button and the links
+                margin-top: 5px;
                 text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-            }
+                align-items: center;
+                appearance: none;
+                border-radius: 24px;
+                border-style: none;
+                box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+                box-sizing: border-box;
+                color: #3c4043;
+                cursor: pointer;
+                display: inline-flex;
+                fill: currentcolor;
+                font-family: "Rosarivo", cursive;
+                font-size: 14px;
+                font-weight: bolder;
+                height: 30px;
+                width: 70px;
+                justify-content: center;
+                letter-spacing: .25px;
+                line-height: normal;
+                max-width: 100%;
+                overflow: visible;
+                padding: 3px 20px;
+                text-align: center;
+                text-transform: none;
+                transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                will-change: transform,opacity;
+                background-color: #000000;
+                color: rgb(251, 251, 251);
+                z-index: 0;
+              }
+              
+              .Resume:hover {
+                background: #ffffff;
+                color: #000000;
+              }
+              
+              .Resume:active {
+                box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+                outline: none;
+              }
+              
+              .Resume:focus {
+                outline: none;
+                border: 2px solid #4285f4;
+              }
+              
+              .Resume:not(:disabled) {
+                box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+              }
+              
+              .Resume:not(:disabled):hover {
+                box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+              }
+              
+              .Resume:not(:disabled):focus {
+                box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+              }
+              
+              .Resume:not(:disabled):active {
+                box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+              }
+              
+              .Resume:disabled {
+                box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+              }
         }
     }
     @media screen and (max-width: 400px)
