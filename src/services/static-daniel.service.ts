@@ -56,10 +56,27 @@ export const DANIEL: Daniel = {
   ],
 
   aboutMeParagraphs: [
-  'I build software for humans. I love it, and I\'m good at it. ', 
-  'I\'m an experienced web services and database developer using ' + 
-  'Java Spring, Ruby on Rails, Postgresql and Oracle PL/SQL. Most recently I\'ve been working ' +
-  'with React and GraphQL. ',
+  'Utilizing software engineering best practices, I have worked with retail, ' +
+  'financial and ed-tech industry partners to develop business critical web ' +
+  'service and database solutions.', 
+  
+  'For Canadian Tire and Loblaws, I built real-time' +
+  ' supply chain management reports that streamlined the day-to-day movement of ' +
+  'automotive, grocery and apparel products across their businesses.', 
+
+  ' For the Ontario Teacher’s Pension Plan, I replaced their existing web-based system for teachers to ' +
+  'monitor and manage their pension.', 
+  
+  'For Thinkific I built the Thinkific App Store along with a first party App allowing B2B ' +
+  'partners to log in with their own identity provider. I built functionality for Thinkific to collect' + 
+  ' VAT taxes from their UK and EU customers as well as allow them to pay for services in their ' + 
+  'local currencies. Most recently I built a new home page dashboard ' +
+  'for Thinkific customers along with a customizable onboarding checklist. ',
+
+  'I am most motivated when faced with a challenging customer-focused problem that requires ' +
+  'software programming to solve.  I work quickly and effectively to understand the technical ' + 
+  'needs of the business so that I can provide the right solutions for them to achieve success.',
+
   'findme@danielchristo.com to discuss your business needs and how I may be of help.']
 
 }
